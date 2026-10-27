@@ -1,0 +1,40 @@
+# vault-config: structure and config ONLY. Data lives in Google Drive / ~/Vault.
+# Deny by default, then allow known-safe paths.
+*
+!.gitignore
+!README.md
+!obsidian/
+!obsidian/**
+!templates/
+!templates/**
+!scripts/
+!scripts/**
+!docs/
+!docs/**
+
+# Never, even inside allowed folders
+obsidian/workspace*.json
+obsidian/plugins/*/main.js
+obsidian/plugins/*/styles.css
+**/*.pdf
+**/*.docx
+**/*.xlsx
+**/*.pptx
+**/*.csv
+**/*.mp4
+**/*.mpg
+**/*.mov
+**/*.avi
+**/*.zip
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.heic
+**/.env
+**/*secret*
+**/*token*
+**/context.md
+**/Master-CV*
+**/Resume-*
+**/CoverLetter-*
+.DS_Store
